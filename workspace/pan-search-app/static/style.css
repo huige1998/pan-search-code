@@ -1,0 +1,29 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 760px; padding: 16px; font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+header h1 { margin: 8px 0 4px; font-size: 24px; }
+.sub { margin: 0 0 12px; opacity: .75; font-size: 14px; }
+.card { border: 1px solid rgba(127,127,127,.35); border-radius: 12px; padding: 14px; margin-bottom: 16px; }
+.card h2 { margin: 4px 0 10px; font-size: 18px; }
+.row { display: flex; gap: 8px; }
+input[type=search] { flex: 1; padding: 10px 12px; font-size: 16px; border-radius: 8px; border: 1px solid rgba(127,127,127,.5); }
+button { padding: 10px 14px; font-size: 15px; border-radius: 8px; border: 1px solid rgba(127,127,127,.5); background: none; cursor: pointer; }
+button.primary { font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.chip { padding: 5px 12px; font-size: 13px; border-radius: 999px; }
+.chip.on { font-weight: 700; text-decoration: underline; }
+.hint { opacity: .7; font-size: 13px; }
+.item { border-top: 1px solid rgba(127,127,127,.25); padding: 10px 0; }
+.item:first-child { border-top: none; }
+.item .name { font-weight: 600; word-break: break-all; }
+.meta { font-size: 12px; opacity: .7; margin: 3px 0; }
+.badge { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 999px; border: 1px solid currentColor; margin-right: 6px; }
+.warn { font-size: 13px; margin: 4px 0; }
+.link { word-break: break-all; font-size: 13px; }
+.task { border-top: 1px solid rgba(127,127,127,.25); padding: 10px 0; }
+.task:first-child { border-top: none; }
+.status { font-size: 12px; padding: 1px 8px; border: 1px solid currentColor; border-radius: 999px; }
+.note { font-size: 13px; opacity: .85; margin-top: 4px; word-break: break-all; }
+.actions { margin-top: 6px; display: flex; gap: 8px; }
+.actions button { padding: 6px 12px; font-size: 13px; }
+.badge.ok { color: #1a7f37; border-color: #1a7f37; }

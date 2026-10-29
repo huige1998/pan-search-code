@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网盘搜索 · 自动转存</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>网盘搜索</h1>
+  <p class="sub">搜到资源 → 提交转存 → 管理员确认后自动转存、去广告、查重，再分享出来</p>
+</header>
+
+<section class="card">
+  <div class="row">
+    <input id="q" type="search" placeholder="输入片名 / 关键词，如：龙珠超" autocomplete="off">
+    <button id="btn-search">搜索</button>
+  </div>
+  <div class="chips" id="drive-chips">
+    <button data-drive="" class="chip on">全部</button>
+    <button data-drive="quark" class="chip">夸克</button>
+    <button data-drive="guangya" class="chip">光鸭</button>
+    <button data-drive="ali" class="chip">阿里</button>
+    <button data-drive="uc" class="chip">UC</button>
+    <button data-drive="baidu" class="chip">百度</button>
+  </div>
+  <p id="search-status" class="hint"></p>
+  <div id="results"></div>
+</section>
+
+<section class="card">
+  <h2>转存任务</h2>
+  <div id="tasks"><p class="hint">暂无任务</p></div>
+</section>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
